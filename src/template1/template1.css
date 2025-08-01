@@ -1,0 +1,132 @@
+.invitation-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 0;
+}
+
+@media (min-width: 601px) {
+  .invitation-container {
+    background: linear-gradient(135deg, #e0e7ef 0%, #f8fafc 100%);
+  }
+}
+
+/* section 1 */
+.section1-card {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  height: 1000px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section1-card-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.section1-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section1-content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.section1-title {
+  font-size: 2rem;
+  color: #6d28d9;
+  margin-bottom: 0.5rem;
+}
+
+.section1-names {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section1-date {
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.section1-rsvp {
+  background: #6d28d9;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 2.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.section1-rsvp:hover {
+  background: #5b21b6;
+}
+
+/* template */
+.invitation-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  height: 600px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.invitation-title {
+  font-size: 2rem;
+  color: #6d28d9;
+  margin-bottom: 0.5rem;
+}
+
+.invitation-names {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.invitation-date,
+.invitation-location {
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+.invitation-message {
+  margin: 1.2rem 0;
+  color: #333;
+}
+
+.invitation-rsvp {
+  background: #6d28d9;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 2.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.invitation-rsvp:hover {
+  background: #5b21b6;
+}
