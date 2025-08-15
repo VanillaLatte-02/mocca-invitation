@@ -46,6 +46,9 @@ function Countdown({ targetDate }) {
   );
 }
 
+
+import section1Photo from '../assets/section1.jpg';
+import background1Photo from '../assets/background1.png';
 import './template1.css';
 
 import { useEffect, useState } from 'react';
@@ -67,20 +70,33 @@ export default function Template1() {
           <div className="section1-content-overlay" style={{position: 'relative', zIndex: 1}}>
             <h1 className="section1-title">You're Invited!</h1>
             <div className="section1-photo-frame">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=400" alt="Contoh Foto" />
+              {/* <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=400" alt="Contoh Foto" /> */}
+              <img src={section1Photo} alt="Contoh Foto" />
             </div>
             <p className="section1-names">John & Doe</p>
             <p className="section1-date">Kamis, 30 Juli 2025</p>
-            <a
+            <button className="section1-addcalendar" onClick={handleAddToCalendar}>Add to Calendar</button>
+            {/* <a
               className="section1-rsvp"
               href="https://wa.me/628123453602?text=Halo%20saya%20akan%20hadir%20di%20acara%20pernikahan%20John%20%26%20Doe"
               target="_blank"
               rel="noopener noreferrer"
             >
               RSVP via WhatsApp
-            </a>
+            </a> */}
           </div>
         </div>
+        {/* garis bantu, nanti hapus */}
+        <hr style={{ border: '2px solid #000', margin: '32px 0' }} /> 
+         <div className="section3-card" style={{
+           backgroundImage: `url(${section1Photo})`,
+         }}>
+          <h1 className="section3-intial">J & D</h1>
+          <p className="section3-quote">Love and hope are the two greatest inventions.</p>
+          <p className="section3-name">Angela - MLBB</p>
+        </div>
+        {/* garis bantu, nanti hapus */}
+        <hr style={{ border: '2px solid #000', margin: '32px 0' }} /> 
         <div className="section2-card">
           <h1 className="section2-title">Instagram web view!</h1>
           <div className="section2-instagram">

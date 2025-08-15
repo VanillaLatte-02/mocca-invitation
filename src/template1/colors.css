@@ -1,0 +1,8 @@
+/* Primary color variable */
+:root {
+	--primary-color: #9929EA;
+    --secondary-color: #CC66DA;
+    --third-color: #fadc34;
+    --text-color: #000000;
+    --text2-color: #ffffff;
+}

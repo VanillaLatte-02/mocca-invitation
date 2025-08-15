@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@700&display=swap');
+
+/* Dancing script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+/* Mozilla Headline */
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@400;500;600;700&display=swap');
+/* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import './colors.css';
 
 .invitation-content {
   width: 100%;
@@ -58,8 +65,8 @@
   border-top-right-radius: 90px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-  outline: 4px solid #6d28d9;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  outline: 4px solid var(--primary-color);
   position: relative;
   margin: 0 auto 1.5rem auto;
   overflow: hidden;
@@ -79,30 +86,31 @@
 
 .section1-title {
   background: transparent;
-  font-size: 2rem;
-  color: #6d28d9;
-  margin-bottom: 5rem;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-family: 'Mozilla Headline', Arial, sans-serif;
   font-weight: 700;
 }
 
 .section1-names {
-  font-size: 4rem;
-  color: #FFCC00;
+  font-size: 4.5rem;
+  color: var(--third-color);
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 4px 12px rgba(0,0,0,0.25), 0 1px 0 #fff;
+  text-shadow: 2px 4px 12px rgba(0,0,0,0.7);
 }
 
 .section1-date {
-  color: #ffffff;
-  margin-bottom: 1rem;
+  color: var(--text2-color);
+  margin-bottom: 1.5rem;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.section1-rsvp {
-  background: #6d28d9;
-  color: #fff;
+.section1-addcalendar {
+  background: var(--secondary-color);
+  color: var(--text2-color);
   border: none;
   border-radius: 1rem;
   padding: 0.7rem 2.2rem;
@@ -110,8 +118,8 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.section1-rsvp:hover {
-  background: #5b21b6;
+.section1-addcalendar:hover {
+  background: var(--third-color);
 }
 
 /* section 2 */
@@ -222,6 +230,36 @@
   background: #059669;
 }
 
+/* section 3 */
+.section3-card{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section3-intial {
+  font-family: 'Dancing Script', cursive;
+  font-size: 7rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.section3-quote {
+  font-family: 'Mozilla Headline', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.section3-name {
+  font-family: 'Mozilla Headline', Arial, sans-serif;
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
 
 /* template */
 .invitation-card {
